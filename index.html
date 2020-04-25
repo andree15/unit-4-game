@@ -1,0 +1,63 @@
+<!doctype html>
+
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+
+    <title>Crystals Collector</title>
+
+    <link rel="stylesheet" href="assets/css/style.css">
+
+</head>
+
+<body>
+
+    <!-- title -->
+
+    <h1 class=textbox id=title>Crystals Collector!</h1>
+
+    <!-- instructions -->
+
+    <h2 class=textbox id=instructions>
+        <p>You will be given a random number and the start of the game.</p>
+        <p>There are four crystals below. By clicking on a crystal, you will add a specific amount of points to your
+            total score</p>
+        <p>you win the game by matching you total score to random number, you lose the game if your total score goes
+            above the random number</p>
+        <p>the value of each crystal is hidden from you unit you click on it.</p>
+        <p>Each time when the games starts, the game will change the values of each crystal.</p>
+    </h2>
+
+    <!-- wins and losses box -->
+    <container>
+        <h2 class=textbox id=randomnumber> </h2>
+
+        <h3 class=textbox id='wl'>
+            <p>Wins: 0</p>
+            <p>Losses: 0</p>
+        </h3>
+    </container>
+    <!-- images of gems -->
+
+    <div id=images>
+        <button><img class=gems src="assets/images/blue.jpg"></button>
+        <button><img class=gems src="assets/images/diamond.gif"></button>
+        <button><img class=gems src="assets/images/green.webp"></button>
+        <button><img class=gems src="assets/images/red.jpg"></button>
+    </div>
+
+    <!-- total score text box -->
+
+    <p class=textbox id=yourScore>Your total score is:</p>
+    <p class=textbox id=numberScore>0</p>
+
+    <!-- javascript and jquery scripts‹ -->
+
+    <script src="assets/javascript/game.js"></script>
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"
+        integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous">
+        </script>
+</body>
+
+</html>
