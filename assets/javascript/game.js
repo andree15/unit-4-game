@@ -18,25 +18,35 @@ $(document).ready (function (){
     //
 
     //get random number behind the gems
-    const gemNumber = Math.floor(Math.random() * 12) + 1
+    let array= ['1','2', '3', '4', '5', '6', '7', '8', '9','10','11','12']
+    const gemNumber = Math.floor(Math.random() * array.length)
     
     //test
     console.log(gemNumber)
     //
 
-    //apply to the click event on the gem 
+    //apply to the gem 
     function applyGem(){
-        $('#numberScore').append ('<div>' + gemNumber + '</div>')
+        $('#numberScore').html ('<div>' + gemNumber + '</div>')
     }
 
+    //call the function
     $("#blue").click(applyGem)
     $("#diamond").click(applyGem)
     $("#green").click(applyGem)
     $("#red").click(applyGem)
 
-    // $('#numberscore').html ("<div>" + value + "</div>") 
 
-    //  $("#blue").click(function(){
-    //      $("#numberScore").val(gemNumber)
-    //  })
+if("#numberScore" === "#randomnumber"){
+    wins++
+}
+
+else { ("#numberScore" > "#randomnumber")
+    losses++
+}
+
+
+$('#wins' + 1).html
+
+
 })
