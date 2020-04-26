@@ -36,11 +36,12 @@ $(document).ready (function (){
     $("#green").click(applyGem)
     $("#red").click(applyGem)
 
-
+//if they get to the right number make their wins increase by 1
 if("#numberScore" === "#randomnumber"){
     wins++
 }
 
+//if they get the number wrong, decrease by 1
 else { ("#numberScore" > "#randomnumber")
     losses++
 }
@@ -50,3 +51,8 @@ $('#wins' + 1).html
 
 
 })
+
+
+/*this was challenging to convert javascript into jquery. I think if this was in 
+javascript I think I could have gotten further and done a bit better.
+*/
